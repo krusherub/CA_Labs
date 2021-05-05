@@ -161,7 +161,7 @@
 
         ; arrow up
         up_arrow_pressed:
-            mov attrib,35h
+            mov attrib,25h
             call d10disply
             dec row
             cmp row,top+1
@@ -212,7 +212,7 @@
             mov dx, offset empty_message
             call display_information
             push ds
-            mov ah, 35h
+            mov ah, 25h
             mov al, 58h
             lea dx, print
             mov bx, seg print
