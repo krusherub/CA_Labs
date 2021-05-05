@@ -35,7 +35,7 @@ int 21h                              ; calling DOS 4ch to quit
 
 proc Interruption far                ; procedure of the interruption (far is necessary)
     mov dx, offset teamNumber        ; writing the message to dx
-    mov ah, 09h                      ; loading 09h to ah registry
+    mov ah, 09h                      ; loading 09h  to ah registry
     int 21h                          ; callling the interruption to output the message
     mov dx, offset kryvonosiuk
     int 21h
