@@ -169,7 +169,7 @@ codeseg
                             ;setting IO registries
         mov al,10110110b    ;bits for the second channel
         out command_reg,al  ;byte to command registry
-                            ;вsetting a counter
+                            ;setting a counter
         mov ax,2705         ;counter is equal to 1190000/440
         out channel_2,al    ;sending al
         mov al,ah           ;sending ah al
