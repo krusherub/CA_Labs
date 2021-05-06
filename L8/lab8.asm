@@ -37,7 +37,7 @@
 
     len dw 100h
     string db 254       ;var for string
-
+;sssd
     port_b equ 61h
     command_reg equ 43h ;command registry address
     channel_2 equ 42h   ;channel 2's address
